@@ -1,26 +1,27 @@
 body{
-    background-color: skyblue;
+    background-color: rgb(122, 184, 209);
     padding-top: 0.5%;
     text-align: center;
 }
 
-.mainhead{
-    border: 2px solid skyblue;
-    margin-left: 4%;
-    font-family: Impact;
-    font-size: 3rem;
+select,option{
+    font-size: 0.8rem;
+    border:0;
+    border-radius: 100%;
+    background-color: rgb(122, 184, 209);
 }
-.mainhead:hover{
-    border: 2px solid black;
-    color: rgb(6, 0, 54);
+select:hover{
+    background-color: rgb(168, 215, 252);
 }
+tr,td{margin:0}
 .calculator{
-    padding-left: 5%;
+    margin: 0;
     text-align: center;
     width: 90%;
 }
 
 .inp1{
+    margin-top: 5%;
     padding: 0%;
     margin-bottom: 2%;
     background-color: rgb(102, 158, 180);
@@ -30,13 +31,9 @@ body{
     width:80%;
     border-radius: 12px;
 }
-.inp1:active{
-    border-color: greenyellow;
-}
-
-#btn{
+.numbutton{
+    background-color: rgb(122, 184, 209);
     border:0px;
-    background-color: skyblue;
     font-size: 2.2rem;
     text-align: center;
     width:7.5%;
@@ -45,7 +42,7 @@ body{
     padding-right:9%;
 }
 .cancelbutton{
-    border-color: rgb(90, 0, 0);
+    border: 0px;;
     background-color: crimson;
     font-size: 2.2rem;
     width:7.5%;
@@ -59,10 +56,20 @@ body{
 }
 
 .opbtn{
-    color: rgb(28, 155, 28);
+    background-color: skyblue;
+    color: rgb(40, 40, 40);
+    border:0px;
+    font-size: 2.2rem;
+    text-align: center;
+    width:7.5%;
+    margin: 1%;
+    padding-left:3%;
+    padding-right:8%;
 }
 
+
 #btn:hover{
-    background-color: rgb(80, 138, 183);
+    background-color: rgb(168, 215, 252);
     color:rgb(28, 42, 0);
+    box-shadow: 0px 0px 10px rgb(16, 16, 16);
 }
