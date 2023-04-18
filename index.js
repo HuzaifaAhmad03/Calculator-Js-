@@ -4,7 +4,12 @@ $(".numbutton").on('click',function(){
     var input1=$(".inp1");
     input1.val(input1.val()+$(this).text());
     buttonsClicked.push($(this).text());  
-    //console.log(buttonsClicked);
+});
+
+$(".inp1").on('keydown',function(event){
+    var input1=$(".inp1").val();
+    console.log(input1);
+    buttonsClicked.push(event.key);  
 });
 
 
@@ -16,7 +21,6 @@ $(".cancelbutton").on('click',function(){
 
 $(".eqbutton").on('click',function(){
     var input1=$(".inp1");
-
     if(buttonsClicked.includes('+'))
     {
         var num1=Number(input1.val().split('+')[0]);
@@ -50,13 +54,3 @@ $(".eqbutton").on('click',function(){
         buttonsClicked.push(num1/num2);
     }
 });
-
-
-//$(".inp1").keydown(function(event){
-//    var input1=$(".inp1");
-//    var inpkey=input1.val().split(event.key[0]);
-//    console.log(inpkey);
-//    input1.val(input1.val().split(0)+event.key);
-//    buttonsClicked.push(event.key);  
-//    //console.log(buttonsClicked);
-//});
